@@ -1,7 +1,7 @@
 import java.util.Comparator;
 
-public class ShapeComparator implements Comparator<Object> {
-  public int compare(Object lhs, Object rhs) {
-    return Double.compare(((Shape)lhs).getArea(), ((Shape)rhs).getArea());
+public class ShapeComparator implements Comparator<Shape> {
+  public int compare(Shape lhs, Shape rhs) {
+    return Double.compare(lhs.getArea(), rhs.getArea());
   }
 }

@@ -16,7 +16,8 @@ public class SelectionSortClient {
     System.out.println("Input Integer Array: ");
     printArray(numbers);
 
-    SelectionSort.sort(numbers, new IntegerComparator());
+    SelectionSort<Integer> intSorter = new SelectionSort<Integer>();
+    intSorter.sort(numbers, new IntegerComparator());
 
     System.out.println("Sorted Integer Array with Value as Key: ");
     printArray(numbers);
@@ -28,13 +29,15 @@ public class SelectionSortClient {
     System.out.println("Input Shape Array: ");
     printArray(shapes);
 
-    SelectionSort.sort(shapes, new ShapeComparator());
+    SelectionSort<Shape> shapeSorter = new SelectionSort<Shape>();
+    shapeSorter.sort(shapes, new ShapeComparator());
 
     System.out.println("Sorted Shape Array with Area as Key: ");
     printArray(shapes);
 
     Student[] studentArray = {new Student("John"), new Student("Jane")};
-    SelectionSort.sort(studentArray, new ShapeComparator());
+    SelectionSort<Student> studentSorter = new SelectionSort<Student>();
+    studentSorter.sort(studentArray, new StudentComparator());
   }
 
 
