@@ -31,6 +31,7 @@ public class BinarySearchComparison {
 
 
   private static void doManyBinarySearches(List<Integer> list, int max, int numTimes) {
+    Collections.sort(list);
     Random rng = new Random();
 
     long beginTime = System.nanoTime();
