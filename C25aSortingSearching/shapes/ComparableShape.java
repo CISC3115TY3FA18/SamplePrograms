@@ -1,4 +1,4 @@
-public abstract class ComparableShape implements Comparable<Shape> {
+public abstract class ComparableShape implements Comparable<ComparableShape> {
   private String name;
 
   public ComparableShape(String name) {
@@ -11,7 +11,7 @@ public abstract class ComparableShape implements Comparable<Shape> {
     return name;
   }
 
-  public int compareTo(Shape theOtherObject) {
+  public int compareTo(ComparableShape theOtherObject) {
     if (this.getArea() > theOtherObject.getArea()) {
       return 1;
     } else if (this.getArea() < theOtherObject.getArea()) {

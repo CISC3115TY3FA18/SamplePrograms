@@ -1,4 +1,4 @@
-public class ComparableRectangle extends Shape implements Comparable<ComparableRectangle> {
+public class ComparableRectangle extends ComparableShape {
 	private double width;
 	private double length;
 
@@ -11,15 +11,4 @@ public class ComparableRectangle extends Shape implements Comparable<ComparableR
 	public double getArea() {
 		return width * length;
 	}
-
-	public int compareTo(ComparableRectangle theOtherObject) {
-    if (this.getArea() > theOtherObject.getArea()) {
-      return 1;
-    } else if (this.getArea() < theOtherObject.getArea()) {
-      return -1;
-    } else {
-      return 0;
-    }
-  }
-
 }
