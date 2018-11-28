@@ -40,7 +40,7 @@ public class PostfixEvaluator {
         case "-":
           s1 = stack.pop();
           s2 = stack.pop();
-          r = Double.parseDouble(s1) - Double.parseDouble(s2);
+          r = Double.parseDouble(s2) - Double.parseDouble(s1);
           stack.push(Double.toString(r));
           break;
         case "*":
