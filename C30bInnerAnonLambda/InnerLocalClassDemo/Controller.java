@@ -27,6 +27,8 @@ public class Controller {
   }
 
   public void registerEventHandlers() {
+
+    // this is a local class
     class SetTextEventHandler implements EventHandler<ActionEvent> {
       private Random rng;
       private Label lblText;
@@ -44,6 +46,7 @@ public class Controller {
     view.getBtnSetColor().setOnAction(new RandomColorEventHandler(view.getLblText()));
   }
 
+  // this is an inner class
   class RandomColorEventHandler implements EventHandler<ActionEvent> {
     private Random rng;
     private Label lblText;
