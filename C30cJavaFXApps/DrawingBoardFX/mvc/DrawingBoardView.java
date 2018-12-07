@@ -10,19 +10,19 @@ import javafx.scene.layout.VBox;
 
 public class DrawingBoardView {
   private final static String CANVAS_HOLDER_STYLE = "-fx-background-color: white";
-	private final static double CANVAS_WIDTH = 650.;
-	private final static double CANVAS_HEIGHT = 400.;
+  private final static double CANVAS_WIDTH = 650.;
+  private final static double CANVAS_HEIGHT = 400.;
 
-	private final static double MAIN_SCENE_WIDTH = 900.;
-	private final static double MAIN_SCENE_HEIGHT = 500.;
+  private final static double MAIN_SCENE_WIDTH = 900.;
+  private final static double MAIN_SCENE_HEIGHT = 500.;
 
 
-	private final static double BUTTON_SPACING = 20.;
-	private final static double PADDING_TOP = 20.;
-	private final static double PADDING_RIGHT = 20.;
-	private final static double PADDING_BOTTOM = 20.;
-	private final static double PADDING_LEFT = 20.;
-	private final static Insets VBOX_PADDING = new Insets(PADDING_TOP, PADDING_RIGHT, PADDING_BOTTOM, PADDING_LEFT);
+  private final static double BUTTON_SPACING = 20.;
+  private final static double PADDING_TOP = 20.;
+  private final static double PADDING_RIGHT = 20.;
+  private final static double PADDING_BOTTOM = 20.;
+  private final static double PADDING_LEFT = 20.;
+  private final static Insets VBOX_PADDING = new Insets(PADDING_TOP, PADDING_RIGHT, PADDING_BOTTOM, PADDING_LEFT);
   private final static Insets HBOX_PADDING = new Insets(PADDING_TOP, PADDING_RIGHT, PADDING_BOTTOM, PADDING_LEFT);
 
   private GraphicsContext gc;

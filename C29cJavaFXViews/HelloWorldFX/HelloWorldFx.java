@@ -24,6 +24,7 @@ public class HelloWorldFx extends Application {
 
 		// show the stage (curtains up)
 		primaryStage.show();
+
 	}
 
 	public static void main(String[] args) {

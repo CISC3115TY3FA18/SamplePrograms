@@ -6,8 +6,8 @@ import javafx.stage.Stage;
 
 public class BrushThicknessController {
   private final static double MIN_LINE_WIDTH = 1.0;
-	private final static double MAX_LINE_WIDTH = 100.0;
-	private final static double LINE_WIDTH_STEP = 1.0;
+  private final static double MAX_LINE_WIDTH = 100.0;
+  private final static double LINE_WIDTH_STEP = 1.0;
 
   private BrushThicknessView view;
   private GraphicsContext gc;

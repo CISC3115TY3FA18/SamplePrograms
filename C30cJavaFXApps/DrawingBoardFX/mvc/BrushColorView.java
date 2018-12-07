@@ -9,9 +9,9 @@ public class BrushColorView {
   private final static double BRUSH_COLOR_SCENE_WIDTH = 400.;
   private final static double BRUSH_COLOR_SCENE_HEIGHT = 300.;
   private final static double PADDING_TOP = 20.;
-	private final static double PADDING_RIGHT = 20.;
-	private final static double PADDING_BOTTOM = 20.;
-	private final static double PADDING_LEFT = 20.;
+  private final static double PADDING_RIGHT = 20.;
+  private final static double PADDING_BOTTOM = 20.;
+  private final static double PADDING_LEFT = 20.;
   private final static Insets HBOX_PADDING = new Insets(PADDING_TOP, PADDING_RIGHT, PADDING_BOTTOM, PADDING_LEFT);
 
   private StackPane holder;

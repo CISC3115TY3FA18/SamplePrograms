@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Control;
@@ -29,8 +30,12 @@ public class SimpleUIFXApp extends Application {
     HBox rootHBox = new HBox();
     VBox leftVBox = new VBox();
     VBox rightVBox = new VBox();
+
+    // size and shape and margin of rootHBox's children
     rootHBox.getChildren().addAll(leftVBox, rightVBox);
-    rootHBox.setSpacing(5.);
+    rootHBox.setMargin(leftVBox, new Insets(10., 5., 10., 10.));
+    rootHBox.setMargin(rightVBox, new Insets(10., 10., 10., 5.));
+    rootHBox.setHgrow(leftVBox, Priority.ALWAYS);
 
     Button btnOK = new Button("OK");
     Button btnCancel = new Button("Cancel");
@@ -40,6 +45,7 @@ public class SimpleUIFXApp extends Application {
     btnCancel.setMaxWidth(Double.MAX_VALUE);
     rightVBox.getChildren().addAll(btnOK, btnCancel);
     rightVBox.setAlignment(Pos.TOP_LEFT);
+    rightVBox.setSpacing(5.);
 
     TextArea textArea = new TextArea();
     textArea.setMinWidth(150.0);

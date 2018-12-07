@@ -13,7 +13,7 @@ public class BrushThicknessView {
   public final static double BRUSH_THICKNESS_DEMO_LINE_CANVAS_WIDTH = 100.;
   public final static double BRUSH_THICKNESS_DEMO_LINE_CANVAS_HEIGHT = 100.;
 
-	private final static double BUTTON_SPACING = 20.;
+  private final static double BUTTON_SPACING = 20.;
 
   private final static double PADDING_TOP = 20.;
   private final static double PADDING_RIGHT = 20.;

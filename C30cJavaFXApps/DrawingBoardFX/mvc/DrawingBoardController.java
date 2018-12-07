@@ -14,12 +14,12 @@ public class DrawingBoardController {
 
   public DrawingBoardController(DrawingBoardView view,
     BrushThicknessController brushThicknessController, BrushColorController brushColorController) {
-      this.view = view;
-      this.brushThicknessController = brushThicknessController;
-      this.brushColorController = brushColorController;
-      registerEventHandlers();
-      this.view.getGraphicsContext().setLineWidth(brushThicknessController.getBrushLineWidth());
-      this.view.getGraphicsContext().setStroke(brushColorController.getBrushColor());
+    this.view = view;
+    this.brushThicknessController = brushThicknessController;
+    this.brushColorController = brushColorController;
+    registerEventHandlers();
+    this.view.getGraphicsContext().setLineWidth(brushThicknessController.getBrushLineWidth());
+    this.view.getGraphicsContext().setStroke(brushColorController.getBrushColor());
   }
 
   public void showDrawingBoardViewOn(Stage stage) {
